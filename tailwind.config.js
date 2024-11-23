@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "about-hero": "url(./src/assets/about.jpg)"
+      },
+      colors: {
+        color1: "#d1ab7d"
+      }
     },
   },
   plugins: [],
