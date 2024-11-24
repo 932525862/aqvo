@@ -1,4 +1,9 @@
 import React from "react";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
+import { BiLogoGmail } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,9 +14,22 @@ const Footer = () => {
             Siz izlagan ta'm, musaffolik, poklik va o‘zgachalik... Barchasi bir
             nuqtada jamlanib, “Evita”'ga aylanadi!
           </p>
-          <div></div>
+          <div className="flex gap-x-5 text-white/60">
+            <Link to={"/"} className="text-2xl hover:scale-105">
+              <FaInstagram />
+            </Link>
+            <Link to={"/"} className="text-2xl hover:scale-105">
+              <FiFacebook />
+            </Link>
+            <Link to={"/"} className="text-2xl hover:scale-105">
+              <FiYoutube />
+            </Link>
+            <Link to={"/"} className="text-2xl hover:scale-105">
+              <BiLogoGmail />
+            </Link>
+          </div>
           <p>© Barcha huquqlar himoyalangan</p>
-          <p className="text-white/80">Made by marketing agency Limsa</p>
+          <p className="text-white/60">Made by marketing agency Limsa</p>
         </div>
       </div>
     </div>

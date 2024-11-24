@@ -1,5 +1,3 @@
-import React from "react";
-import Hero from "../components/about/Hero";
 import { Link } from "react-router-dom";
 import leftArrowIcon from "../assets/left-arrow.svg";
 import aboutImg1 from "../assets/about1.jpg";
@@ -28,12 +26,12 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="flex gap-x-10 mb-16">
-          <div className="w-[46%] rounded-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-y-5 gap-x-10 mb-16">
+          <div className="lg:w-[46%] rounded-xl overflow-hidden">
             <img src={aboutImg1} alt="taqvo image" className="h-full w-full object-cover"/>
           </div>
 
-          <div className="flex flex-col gap-y-5 justify-between w-[50%]">
+          <div className="flex flex-col gap-y-5 justify-between lg:w-[50%]">
             <h4 className="text-[24px] text-white font-medium">
               <span className="text-color1 block">WATER LIFE MINERAL</span>{" "}
               O‘zbekistondagi eng yirik ichimlik suvi ishlab chiqaruvchi
@@ -53,12 +51,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse gap-x-10 mb-16">
-          <div className="w-[46%] rounded-xl overflow-hidden">
+        <div className="flex flex-col lg:flex-row-reverse gap-y-5 gap-x-10 mb-16">
+          <div className="lg:w-[46%] rounded-xl overflow-hidden">
             <img src={aboutImg2} alt="taqvo image" className="h-full w-full object-cover"/>
           </div>
 
-          <div className="flex flex-col gap-y-5 justify-between w-[50%]">
+          <div className="flex flex-col gap-y-5 justify-between lg:w-[50%]">
             <h4 className="text-[24px] text-white font-medium">
               <span className="text-color1 block">WATER LIFE MINERAL</span>{" "}
               O‘zbekistondagi eng yirik ichimlik suvi ishlab chiqaruvchi
@@ -98,10 +96,10 @@ const About = () => {
           </div>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center pb-20">
           <h3 className="oswald text-color1 text-3xl font-medium mb-5">BIZNING SERTIFIKATLARIMIZ</h3>
 
-          <div className="grid grid-cols-4 gap-x-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
             <img src={sertificatImg} alt="taqvo sertificat image" />
             <img src={sertificatImg} alt="taqvo sertificat image" />
             <img src={sertificatImg} alt="taqvo sertificat image" />
