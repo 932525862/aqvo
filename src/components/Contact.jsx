@@ -15,9 +15,8 @@ const Contact = () => {
   };
 
   const regionOptions = [
-    { label: "Toshkent", value: "Toshkent" },
-    { label: "Samarqand", value: "Samarqand" },
-    { label: "Buxoro", value: "Buxoro" },
+    { label: "Mahsulot", value: "Mahsulot" },
+    { label: "Franshiza", value: "Franshiza" }
   ];
   return (
     <section className="bg-[#e03636] pt-[100px] pb-[50px]">
@@ -106,8 +105,8 @@ const Contact = () => {
             </div>
             <div className="w-full">
               <FormSelect
-                name="select"
-                placeholder="Select"
+                name="service"
+                placeholder="Xizmat turini tanlang"
                 control={control}
                 options={regionOptions}
                 rules={{ required: "Select" }}
