@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Controller } from "react-hook-form";
+import { GrFormPrevious } from "react-icons/gr";
 
 const FormSelect = ({ name, label, control, options, rules }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +32,13 @@ const FormSelect = ({ name, label, control, options, rules }) => {
         render={({ field }) => (
           <>
             <div
-              className="w-full mt-2 p-2 bg-transparent text-[#fff] border-b cursor-pointer"
+              className="w-full mt-2 p-2 bg-transparent text-[#fff] border-b cursor-pointer flex items-center justify-between"
               onClick={() => setIsOpen(!isOpen)}
             >
               {selectedOption || "Tanlang"}
+              <GrFormPrevious
+                className={`${isOpen ? "rotate-90" : "-rotate-90"}`}
+              />
             </div>
             {isOpen && (
               <ul className="absolute w-full mt-2 bg-white rounded-md shadow-lg z-10">

@@ -15,9 +15,9 @@ const Contact = () => {
   };
 
   const regionOptions = [
-    { label: 'Toshkent', value: 'Toshkent' },
-    { label: 'Samarqand', value: 'Samarqand' },
-    { label: 'Buxoro', value: 'Buxoro' },
+    { label: "Toshkent", value: "Toshkent" },
+    { label: "Samarqand", value: "Samarqand" },
+    { label: "Buxoro", value: "Buxoro" },
   ];
   return (
     <section className="bg-[#e03636] pt-[100px] pb-[50px]">
@@ -44,7 +44,7 @@ const Contact = () => {
                 rules={{ required: "Ismni kiriting" }}
               />
               {errors.firstName && (
-                <p className="text-red-500">{errors.firstName.message}</p>
+                <p className="text-black text-[13px] mt-[2px]">{errors.firstName.message}</p>
               )}
             </div>
             <div>
@@ -56,60 +56,68 @@ const Contact = () => {
                 rules={{ required: "Familiya kiriting" }}
               />
               {errors.lastName && (
-                <p className="text-red-500">{errors.lastName.message}</p>
+                <p className="text-black text-[13px] mt-[2px]">{errors.lastName.message}</p>
               )}
             </div>
           </div>
 
           <div className="flex gap-4">
             <div>
-            <InputField
-              name="phoneNumber"
-              placeholder="Telefon raqamingiz"
-              type="tel"
-              control={control}
-              rules={{ required: "Telefon raqam kiriting" }}
-            />
-            {errors.phoneNumber && (
-              <p className="text-red-500">{errors.phoneNumber.message}</p>
-            )}
+              <InputField
+                name="phoneNumber"
+                placeholder="Telefon raqamingiz"
+                type="tel"
+                control={control}
+                rules={{ required: "Telefon raqam kiriting" }}
+              />
+              {errors.phoneNumber && (
+                <p className="text-black text-[13px] mt-[2px]">{errors.phoneNumber.message}</p>
+              )}
             </div>
             <div>
-            <InputField
-              name="telegramUsername"
-              placeholder="Telegram username"
-              type="text"
-              control={control}
-            />
-            {errors.telegramUsername && (
-              <p className="text-red-500">{errors.telegramUsername.message}</p>
-            )}
+              <InputField
+                name="telegramUsername"
+                placeholder="Telegram username"
+                type="text"
+                control={control}
+                rules={{ required: "Telegram useename kiriting" }}
+              />
+              {errors.telegramUsername && (
+                <p className="text-black text-[13px] mt-[2px]">
+                  {errors.telegramUsername.message}
+                </p>
+              )}
             </div>
           </div>
           <div className="flex gap-4">
-          <div className="w-full">
-          <InputField
-            name="region"
-            placeholder="Hudud"
-            type="select"
-            control={control}
-          >
-          </InputField>
-          </div>
             <div className="w-full">
-            <FormSelect
-            name="select"
-            placeholder="Select"
-            control={control}
-            options={regionOptions}
-            rules={{ required: "Select" }}
-            />
-            {errors.select && <p className="text-red-500">{errors.select.message}</p>}
+              <InputField
+                name="region"
+                placeholder="Hudud"
+                type="select"
+                control={control}
+                rules={{ required: "Hududingizni kiriting" }}
+              ></InputField>
+              {errors.region && (
+                <p className="text-black text-[13px] mt-[2px]">
+                  {errors.region.message}
+                </p>
+              )}
             </div>
-
+            <div className="w-full">
+              <FormSelect
+                name="select"
+                placeholder="Select"
+                control={control}
+                options={regionOptions}
+                rules={{ required: "Select" }}
+              />
+              {errors.select && (
+                <p className="text-black text-[13px] mt-[2px]">{errors.select.message}</p>
+              )}
+            </div>
           </div>
 
-          
           <InputField
             name="message"
             placeholder="Xabar"
