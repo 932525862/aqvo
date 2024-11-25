@@ -8,8 +8,6 @@ const Home = ({isOpen, setIsOpen, openModal}) => {
   return (
     <main>
         <Hero isOpen={isOpen} setIsOpen={setIsOpen} openModal={openModal}/>
-        <Taqvo></Taqvo>
-        <Hero/>
         <SwiperSection/>
         <Taqvo/>
         <Contact/>

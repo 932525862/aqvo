@@ -3,6 +3,7 @@ import InputField from "./InputFielad";
 import FormSelect from "./FormSelect";
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const TOKEN = "7160474181:AAH3gUma-7m7XvwY0AYTbcKFaXjWLJ2MmUg";
 const CHAT_ID = 467533539;
@@ -14,7 +15,16 @@ const Form = () => {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+    reset
+  } = useForm({defaultValues: {
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    telegramUsername: "",
+    region: "",
+    service: "",
+    message: "",
+  },});
 
   const onSubmit = async (data) => {
     setLoading(true);
@@ -28,29 +38,30 @@ const Form = () => {
 
     if (response?.data?.ok) {
       toast.success("Success!");
+      setLoading(false);
       reset();
     } else {
       toast.error("Error!");
+      setLoading(false);
     }
 
-    setLoading(false);
   };
 
   const resetMessage = (data) => {
     let fullName =
       data?.firstName || data?.lastName
-        ? `F.I: ${data?.firstName} ${data?.lastName}`
+        ? `👤 F.I: ${data?.firstName} ${data?.lastName}`
         : "";
 
-    let phone = data?.phoneNumber ? `\nTelefon: ${data?.phoneNumber}` : "";
+    let phone = data?.phoneNumber ? `\n📞 Telefon: ${data?.phoneNumber}` : "";
 
-    let address = data?.region ? `\nManzil: ${data?.region}` : "";
+    let address = data?.region ? `\n🏠 Manzil: ${data?.region}` : "";
 
-    let telegram = data?.telegramUsername ? `\nTelegram: ${data?.telegramUsername}` : "";
+    let telegram = data?.telegramUsername ? `\n💬 Telegram: ${data?.telegramUsername}` : "";
 
-    let service = data?.service ? `\nXizmat turi: ${data?.service}` : "";
+    let service = data?.service ? `\n🛠 Xizmat turi: ${data?.service}` : "";
 
-    let xabar = data?.message ? `\nIzoh: ${data?.message}` : "";
+    let xabar = data?.message ? `\n📝 Izoh: ${data?.message}` : "";
 
     let message = fullName + phone + address + telegram  + service + xabar;
 
@@ -75,7 +86,7 @@ const Form = () => {
           />
           {errors.firstName && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.firstName.message}
+              {errors?.firstName?.message}
             </p>
           )}
         </div>
@@ -87,9 +98,9 @@ const Form = () => {
             control={control}
             rules={{ required: "Familiya kiriting" }}
           />
-          {errors.lastName && (
+          {errors?.lastName && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.lastName.message}
+              {errors?.lastName?.message}
             </p>
           )}
         </div>
@@ -104,9 +115,9 @@ const Form = () => {
             control={control}
             rules={{ required: "Telefon raqam kiriting" }}
           />
-          {errors.phoneNumber && (
+          {errors?.phoneNumber && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.phoneNumber.message}
+              {errors?.phoneNumber?.message}
             </p>
           )}
         </div>
@@ -118,9 +129,9 @@ const Form = () => {
             control={control}
             rules={{ required: "Telegram useename kiriting" }}
           />
-          {errors.telegramUsername && (
+          {errors?.telegramUsername && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.telegramUsername.message}
+              {errors?.telegramUsername?.message}
             </p>
           )}
         </div>
@@ -130,13 +141,12 @@ const Form = () => {
           <InputField
             name="region"
             placeholder="Hudud"
-            type="select"
             control={control}
             rules={{ required: "Hududingizni kiriting" }}
           ></InputField>
-          {errors.region && (
+          {errors?.region && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.region.message}
+              {errors?.region?.message}
             </p>
           )}
         </div>
@@ -146,11 +156,11 @@ const Form = () => {
             placeholder="Xizmat turini tanlang"
             control={control}
             options={regionOptions}
-            rules={{ required: "Select" }}
+            rules={{ required: "Xizmat turini tanlang" }}
           />
-          {errors.select && (
+          {errors?.service && (
             <p className="text-black text-[13px] mt-[2px]">
-              {errors.select.message}
+              {errors?.service?.message}
             </p>
           )}
         </div>

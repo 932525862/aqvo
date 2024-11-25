@@ -16,7 +16,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
       {isOpen && (
         <div
           id="modal-overlay"
-          className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-[111]"
+          className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-[111] p-2"
           onClick={handleOutsideClick}
         >
           <div className="rounded shadow-lg w-max bg-red-800 pt-10 pb-8 px-6 relative">

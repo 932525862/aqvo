@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Layout from "./layout/Layout";
 import { useState } from "react";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +14,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer />
       <Routes>
         <Route path="/" element={<Layout isOpen={isOpen} setIsOpen={setIsOpen} openModal={openModal}/>}>
           <Route index element={<Home isOpen={isOpen} setIsOpen={setIsOpen} openModal={openModal}/>} />
