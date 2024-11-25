@@ -17,7 +17,6 @@ const Form = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log(data);
     setLoading(true);
 
     const message = resetMessage(data);

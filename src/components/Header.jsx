@@ -6,7 +6,7 @@ import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import i18n from "../i18next";
 
-const Header = () => {
+const Header = ({openModal}) => {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -116,7 +116,7 @@ const Header = () => {
             {/* Til tanlash va tugma */}
             <div className="hidden lg:block">
               <LanguageSelect />
-              <button className="font-[500] w-[240px] h-[44px] bg-[#d1ab7d] transition-all duration-300 rounded-[30px] hover:bg-red-700">
+              <button onClick={openModal} className="font-[500] w-[240px] h-[44px] bg-[#d1ab7d] transition-all duration-300 rounded-[30px] hover:bg-red-700">
                 Bog'lanish
               </button>
             </div>

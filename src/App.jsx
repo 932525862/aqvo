@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout isOpen={isOpen} setIsOpen={setIsOpen}/>}>
+        <Route path="/" element={<Layout isOpen={isOpen} setIsOpen={setIsOpen} openModal={openModal}/>}>
           <Route index element={<Home isOpen={isOpen} setIsOpen={setIsOpen} openModal={openModal}/>} />
           <Route path="/about" element={<About />} />
         </Route>
