@@ -1,47 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat Alternates', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
 }
 
 
 .container{
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-li{
-    list-style: none;
+@media only screen and (max-width: 960px) {
+  .container{
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 }
 
-a{
-    text-decoration: none;
-    color:inherit;
+li {
+  list-style: none;
 }
 
-.oswald{
-    font-family: 'Oswald', Arial, sans-serif;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes move {
-    0% {
-      transform: translateX(-100%); /* Boshlanish holati: chapdan tashqarida */
-    }
-    100% {
-      transform: translateX(100%); /* Yakuniy holat: o'ngga tashqarida */
-    }
-  }
+.oswald {
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important; /* Asosiy rang */
   
-  .animate-move {
-    animation: move 10s linear infinite; /* 10 soniya davomida takrorlanadi */
-  }
-  
+  border: 1px solid #e74c3c !important;
+  opacity: 0.7 !important; /* Yorqinligi */
+}
+
+/* Faol bo'lgan pagination nuqtasi */
+.swiper-pagination-bullet-active {
+  background-color: #e74c3c !important; /* Faol rang */
+  opacity: 1 !important; /* Yorqinligi */
+}

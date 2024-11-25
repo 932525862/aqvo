@@ -12,17 +12,20 @@ const Hero = ({openModal}) => {
         //   opacity: 0.7,
         // }}
       ></div>
-      <div className="absolute top-[30%] z-20">
-        <Marquee direction="left">
-          <div className="oswald text-[100px] uppercase text-[#fff] font-medium  w-full">
+      <div className="absolute top-[60%] lg:top-[30%] z-20 w-full overflow-hidden">
+        <Marquee direction="left" gradient={false} >
+          <div className="oswald text-[12vw] uppercase text-[#fff] font-medium mr-4">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+          <div className="oswald text-[12vw] uppercase text-[#fff] font-medium  mr-4">
             Lorem ipsum dolor sit amet consectetur.
           </div>
         </Marquee>
       </div>
       <div className="container relative z-10 h-full">
-        <div className="flex items-end h-full pb-14">
-          <div className="flex justify-between w-full">
-            <div className="max-w-[237px] text-[#fff]">
+        <div className="flex items-start pt-36 lg:pt-0 lg:items-end h-full pb-14">
+          <div className="flex lg:flex-row flex-col gap-6 items-center  justify-between w-full">
+            <div className="max-w-[460px] text-center lg:text-left lg:max-w-[237px] text-[#fff]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               sapiente neque dolores suscipit deserunt nesciunt eligendi
               repudiandae debitis hic maxime.

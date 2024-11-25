@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import leftArrowIcon from "../assets/left-arrow.svg";
 import aboutImg1 from "../assets/about1.jpg";
@@ -8,7 +9,6 @@ import sertificatImg from "../assets/sertificat.jpg";
 const About = () => {
   return (
     <div className="pt-32 bg-red-800">
-      {/* <Hero/> */}
       <div className="container">
         <div className="flex items-center mb-10">
           <Link
