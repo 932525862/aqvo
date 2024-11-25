@@ -22,10 +22,10 @@ const SwiperSection = () => {
       >
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
-            <h3 className="oswald text-[86px] max-w-[760px] text-center uppercase leading-[110%] font-semibold">
+            <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
               Lorem, ipsum dolor. Lorem,{" "}
             </h3>
-            <p className="text-[18px] max-w-[760px] text-center">
+            <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
               necessitatibus! Lorem ipsum dolor sit amet.
             </p>
@@ -33,10 +33,10 @@ const SwiperSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
-            <h3 className="oswald text-[86px] max-w-[760px] text-center uppercase leading-[110%] font-semibold">
+            <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
               Lorem, ipsum.
             </h3>
-            <p className="text-[18px] max-w-[760px] text-center">
+            <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
               necessitatibus! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
             </p>
@@ -44,10 +44,10 @@ const SwiperSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
-            <h3 className="oswald text-[86px] max-w-[760px] text-center uppercase leading-[110%] font-semibold">
+            <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
               Lorem ipsum dolor sit.
             </h3>
-            <p className="text-[18px] max-w-[760px] text-center">
+            <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequatur voluptates sit voluptas mollitia reprehenderit
               suscipit ipsum consectetur placeat veniam dicta?

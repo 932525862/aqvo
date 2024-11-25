@@ -17,9 +17,6 @@ const Hero = ({openModal}) => {
           <div className="oswald text-[12vw] uppercase text-[#fff] font-medium mr-4">
             Lorem ipsum dolor sit amet consectetur.
           </div>
-          <div className="oswald text-[12vw] uppercase text-[#fff] font-medium  mr-4">
-            Lorem ipsum dolor sit amet consectetur.
-          </div>
         </Marquee>
       </div>
       <div className="container relative z-10 h-full">
@@ -31,8 +28,8 @@ const Hero = ({openModal}) => {
               repudiandae debitis hic maxime.
             </div>
             <div className="w-[158px] h-[158px] rounded-full border border-[#ece6e6] p-[10px] cursor-pointer relative">
-              <div className="w-[145px] h-[145px] rounded-full bg-red-950 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"><img className="w-[90px] h-[90px]" src={buka} alt="" /></div>
-              <div onClick={openModal} className="w-[145px] h-[145px] rounded-full bg-[#d1ab7d] text-[#fff] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase flex items-center justify-center text-[20px] font-medium opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div className="lg:flex w-[145px] h-[145px] rounded-full bg-red-950 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden items-center justify-center"><img className="w-[90px] h-[90px]" src={buka} alt="" /></div>
+              <div onClick={openModal} className="w-[145px] h-[145px] rounded-full bg-[#d1ab7d] text-[#fff] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 uppercase flex items-center justify-center text-[20px] font-medium opacity-100 lg:opacity-0 hover:opacity-100 transition-opacity duration-300">
                 Buyutma
               </div>
             </div>

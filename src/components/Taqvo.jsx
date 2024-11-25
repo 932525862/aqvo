@@ -27,18 +27,18 @@ import Marquee from "react-fast-marquee";
 
 const Taqvo = () => {
   return (
-    <section className="bg-red-800 py-[70px]">
+    <section className="bg-red-800 py-[50px] ss:py-[70px]">
       <div className="container">
         <div className="flex justify-between text-white items-center">
-          <div className="relative">
-            <h1 className="text-[32px] max-w-[415px]">
+          <div className="relative ">
+            <h1 className="text-[25px] sm:text-[32px] max-w-[415px]">
               SIZNING EVITA BILAN LAHZALARINGIZ
             </h1>
-            <div className="absolute -bottom-[30px] -right-[100px]">
-              <img className="w-[200px] h-AUTO" src={taqvoImg} alt="" />
+            <div className="absolute -bottom-[50px] sm:-bottom-[30px] right-0 sm:-right-[100px]">
+              <img className="w-[150px] sm:w-[200px] h-auto" src={taqvoImg} alt="taqvo photo" />
             </div>
           </div>
-          <div className="flex items-center flex-col gap-[10px] w-[260px]">
+          <div className="hidden lg:flex items-center flex-col gap-[10px] w-[260px]">
             <button className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300">
               Bizning Instagram
             </button>
@@ -53,63 +53,63 @@ const Taqvo = () => {
           <Marquee direction="left">
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img1}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img2}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img3}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img4}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img5}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img6}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img7}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img8}
                 alt="photo"
               />
             </div>
             <div className="mr-[20px]">
               <img
-                className="w-[300px] h-[300px] object-cover rounded-[20px]"
+                className="w-[200px] ss:w-[250px] sm:w-[280px] lg:w-[300px] h-[200px] ss:h-[250px] sm:h-[280px] lg:h-[300px] object-cover rounded-[20px]"
                 src={img9}
                 alt="photo"
               />
@@ -119,82 +119,92 @@ const Taqvo = () => {
         <Marquee direction="right" pauseOnClick={true}>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo1}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo2}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo3}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo4}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo5}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo6}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo7}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo8}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo9}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo10}
               alt="photo"
             />
           </div>
           <div className="mr-[20px]">
             <img
-              className="w-[200px] h-[200px] object-cover rounded-[20px]"
+              className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"
               src={photo11}
               alt="photo"
             />
           </div>
         </Marquee>
+      </div>
+      <div className="container">
+        <div className="lg:hidden flex items-center gap-[10px] w-full mt-[30px] text-[#fff] text-[14px] ss:text-[15px]">
+          <button className="w-full font-medium border border-white rounded-full py-[15px] ">
+            Bizning Instagram
+          </button>
+          <button className="w-full font-medium border border-white rounded-full py-[15px] ">
+            Bizning Telegram
+          </button>
+        </div>
       </div>
     </section>
   );
