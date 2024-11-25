@@ -17,7 +17,7 @@ const InputField= ({ name, label, type, control, rules, placeholder, isTextArea 
               {...field}
               id={name}
               placeholder={placeholder}
-              className="w-full p-2 mt-2 text-[#fff] resize-none bg-transparent border outline-none focus:outline-none rounded-md h-[120px] placeholder:text-[#fff]"
+              className="w-full p-2 p mt-2 text-[14px] ss:text-[16px] text-[#fff] resize-none bg-transparent border outline-none focus:outline-none rounded-md h-[120px] placeholder:text-[#fff]"
             />
           ) : (
             <input
@@ -25,7 +25,7 @@ const InputField= ({ name, label, type, control, rules, placeholder, isTextArea 
               type={type}
               id={name}
               placeholder={placeholder}
-              className="w-full p-2 mt-2 bg-transparent border-b outline-none focus:outline-none text-[#fff] placeholder:text-[#fff]"
+              className="w-full pl-0 ss:pl-2 text-[14px] ss:text-[16px] p-2 mt-2 bg-transparent border-b outline-none focus:outline-none text-[#fff] placeholder:text-[#fff]"
             />
           )
         )}

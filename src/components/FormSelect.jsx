@@ -32,7 +32,7 @@ const FormSelect = ({ name, label, control, options, rules, placeholder}) => {
         render={({ field }) => (
           <>
             <div
-              className="w-full mt-2 p-2 bg-transparent text-[#fff] border-b cursor-pointer flex items-center justify-between"
+              className="w-full text-[14px] ss:text-[16px] mt-2 p-2 pl-0 ss:pl-2 bg-transparent text-[#fff] border-b cursor-pointer flex items-center justify-between"
               onClick={() => setIsOpen(!isOpen)}
             >
               {selectedOption || placeholder}
@@ -45,7 +45,7 @@ const FormSelect = ({ name, label, control, options, rules, placeholder}) => {
                 {options.map((option) => (
                   <li
                     key={option.value}
-                    className="p-2 hover:bg-gray-200 cursor-pointer rounded-md"
+                    className="p-2 hover:bg-gray-200 cursor-pointer rounded-md text-[14px] ss:text-[16px]"
                     onClick={() => {
                       setSelectedOption(option.label);
                       setIsOpen(false);
