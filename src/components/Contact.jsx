@@ -8,13 +8,12 @@ const Contact = () => {
         <div className="flex justify-between lg:flex-row flex-col ">
           <div className="max-w-full lg:max-w-[500px] text-[#fff]">
             <h3 className="oswald text-[32px] uppercase font-semibold mb-[10px]">
-              Lorem ipsum dolor sit.
+            Biz bilan bog‘laning
             </h3>
             <p className="text-[15px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              totam, quasi aut nisi temporibus animi consectetur assumenda ipsam
-              doloribus perspiciatis! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Provident, rerum!
+            Sizda savollar yoki takliflar bormi? Biz har doim mijozlarimiz
+              bilan aloqada bo‘lishga tayyormiz. Quyidagi shaklni to‘ldirib,
+              bizga murojaat qilishingiz mumkin.
             </p>
           </div>
           <Form/>

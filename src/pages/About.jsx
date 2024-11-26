@@ -22,7 +22,7 @@ const About = () => {
             />
           </Link>{" "}
           <h2 className="w-full text-center text-4xl text-red-200 oswald ">
-            Taqvo - bizning tanlov
+           Aqvo - sifatli konserva mahsulotlari
           </h2>
         </div>
 
@@ -33,20 +33,15 @@ const About = () => {
 
           <div className="flex flex-col gap-y-5 justify-between lg:w-[50%]">
             <h4 className="text-[24px] text-white font-medium">
-              <span className="text-color1 block">WATER LIFE MINERAL</span>{" "}
-              O‘zbekistondagi eng yirik ichimlik suvi ishlab chiqaruvchi
-              kompaniyalardan biri hisoblanadi.
+              <span className="text-color1 block">AQVO KONSERVA</span>{" "}
+              O‘zbekistondagi yetakchi konserva mahsulotlari ishlab chiqaruvchi kompaniyalardan biri.
             </h4>
             <p className="text-[15px] font-medium text-white">
-              Biz mijozlarimizga barcha standartlar va talablarga javob
-              beradigan yuqori sifatli ichimlik suvini taklif qilishga
-              intilamiz. Zamonaviy asbob-uskunalar va eng yangi
-              texnologiyalardan foydalanganimiz tufayli suv ishlab chiqarish
-              jarayoni xalqaro sifat standartlariga qat'iy rioya qilingan holda
-              amalga oshirilmoqda. Har bir shishadagi WATER LIFE MINERAL
-              suvining har bir tomchisi xavfsizligi va iste'molga yaroqli
-              ekanligini ta'minlash uchun qattiq tekshiruv a nazoratning ko'p
-              bosqichlaridan o'tadi.
+            Taqvo kompaniyasi yuqori sifatli **tushonka** va **jiz**
+              mahsulotlarini ishlab chiqarishga ixtisoslashgan. Zamonaviy
+              texnologiyalar va xalqaro sifat standartlariga mos usullar orqali
+              mahsulotlarimizni tayyorlaymiz. Taqvo mahsulotlari o‘zining
+              mazasi va uzoq muddat saqlanishi bilan ajralib turadi.
             </p>
           </div>
         </div>
@@ -58,20 +53,15 @@ const About = () => {
 
           <div className="flex flex-col gap-y-5 justify-between lg:w-[50%]">
             <h4 className="text-[24px] text-white font-medium">
-              <span className="text-color1 block">WATER LIFE MINERAL</span>{" "}
-              O‘zbekistondagi eng yirik ichimlik suvi ishlab chiqaruvchi
-              kompaniyalardan biri hisoblanadi.
+              <span className="text-color1 block">AQVO KONSERVA</span>{" "}
+              Mazali va sog‘lom mahsulotlar ishlab chiqaradi.
             </h4>
             <p className="text-[15px] font-medium text-white">
-              Biz mijozlarimizga barcha standartlar va talablarga javob
-              beradigan yuqori sifatli ichimlik suvini taklif qilishga
-              intilamiz. Zamonaviy asbob-uskunalar va eng yangi
-              texnologiyalardan foydalanganimiz tufayli suv ishlab chiqarish
-              jarayoni xalqaro sifat standartlariga qat'iy rioya qilingan holda
-              amalga oshirilmoqda. Har bir shishadagi WATER LIFE MINERAL
-              suvining har bir tomchisi xavfsizligi va iste'molga yaroqli
-              ekanligini ta'minlash uchun qattiq tekshiruv a nazoratning ko'p
-              bosqichlaridan o'tadi.
+            Bizning **tushonka** va **jiz** mahsulotlarimiz tabiiy
+              xomashyodan tayyorlanadi. Har bir jarayon gigiyena va sifat
+              nazorati ostida olib boriladi. Mahsulotlarimiz uzoq vaqt
+              saqlanishi va o‘zining tabiiy mazasi bilan iste’molchilarga
+              yoqadi.
             </p>
           </div>
         </div>
@@ -83,15 +73,11 @@ const About = () => {
 
           <div className="flex flex-col gap-y-5 justify-between">
             <p className="text-[15px] font-medium text-white">
-              Biz mijozlarimizga barcha standartlar va talablarga javob
-              beradigan yuqori sifatli ichimlik suvini taklif qilishga
-              intilamiz. Zamonaviy asbob-uskunalar va eng yangi
-              texnologiyalardan foydalanganimiz tufayli suv ishlab chiqarish
-              jarayoni xalqaro sifat standartlariga qat'iy rioya qilingan holda
-              amalga oshirilmoqda. Har bir shishadagi WATER LIFE MINERAL
-              suvining har bir tomchisi xavfsizligi va iste'molga yaroqli
-              ekanligini ta'minlash uchun qattiq tekshiruv a nazoratning ko'p
-              bosqichlaridan o'tadi.
+            Aqvo kompaniyasining barcha mahsulotlari xalqaro standartlarga
+              mos ishlab chiqariladi. Tabiiy xomashyodan tayyorlangan **tushonka** va
+              **jiz** konservalari mijozlarimizning kundalik hayotida ishonchli
+              tanlov bo‘lib xizmat qiladi. Biz iste'molchilarimizga yuqori
+              sifatni kafolatlaymiz.
             </p>
           </div>
         </div>

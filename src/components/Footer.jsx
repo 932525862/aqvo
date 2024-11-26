@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col items-center justify-center gap-y-5 text-white">
           <p className="max-w-[564px] text-center">
-            Siz izlagan ta'm, musaffolik, poklik va o‘zgachalik... Barchasi bir
-            nuqtada jamlanib, “Evita”'ga aylanadi!
+          Sifat va mazalilikni birlashtirgan, o‘ziga xos ta’mga ega
+          konservalar. Sizning tanlovingiz - **Aqvo**!
           </p>
           <div className="flex gap-x-5 text-white/60">
             <Link to={"/"} className="text-2xl hover:scale-105">
@@ -29,7 +29,7 @@ const Footer = () => {
             </Link>
           </div>
           <p>© Barcha huquqlar himoyalangan</p>
-          <p className="text-white/60">Made by marketing agency Limsa</p>
+          <p className="text-white/60">Made by Limsa marketing agency</p>
         </div>
       </div>
     </div>

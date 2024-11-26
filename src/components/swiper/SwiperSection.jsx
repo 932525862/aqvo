@@ -23,34 +23,33 @@ const SwiperSection = () => {
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem, ipsum dolor. Lorem,{" "}
+            Tabiiylik va sifatni tanlang!
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-              necessitatibus! Lorem ipsum dolor sit amet.
+            Bizning mahsulotlarimiz faqat yuqori sifatli xomashyodan tayyorlanib, 
+            sizga mazali va foydali konservalar taqdim etadi.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem, ipsum.
+            Har doim yangi va mazali!
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-              necessitatibus! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            "Aqvo" konservalari sizning dasturxoningizni yanada boyitadi va
+            taomingizga o‘ziga xos lazzat qo‘shadi.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem ipsum dolor sit.
+            Ishonchli va xavfsiz tanlov
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur voluptates sit voluptas mollitia reprehenderit
-              suscipit ipsum consectetur placeat veniam dicta?
+            Oila uchun xavfsiz va sifatli oziq-ovqatni tanlashni o‘ylayotgan
+            bo‘lsangiz, "Aqvo" mahsulotlari - eng yaxshi tanlov!
             </p>
           </div>
         </SwiperSlide>

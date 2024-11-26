@@ -20,7 +20,7 @@ import photo6 from "../assets/img2/6.jpg";
 import photo7 from "../assets/img2/7.jpg";
 import photo8 from "../assets/img2/8.jpg";
 import photo9 from "../assets/img2/9.jpg";
-import photo10 from "../assets/img2/10.jpg";
+import photo10 from "../assets/img2/10.jpg";S
 import photo11 from "../assets/img2/11.jpg";
 
 import Marquee from "react-fast-marquee";
@@ -32,7 +32,7 @@ const Taqvo = () => {
         <div className="flex justify-between text-white items-center">
           <div className="relative ">
             <h1 className="text-[25px] sm:text-[32px] max-w-[415px]">
-              SIZNING EVITA BILAN LAHZALARINGIZ
+            Aqvo bilan toza va sog'lom hayotga qadam qo'ying
             </h1>
             <div className="absolute -bottom-[50px] sm:-bottom-[30px] right-0 sm:-right-[100px]">
               <img className="w-[150px] sm:w-[200px] h-auto" src={taqvoImg} alt="taqvo photo" />
