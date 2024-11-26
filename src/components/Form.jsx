@@ -176,7 +176,7 @@ const Form = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-2 mt-4 bg-[#d1ab7d] font-medium text-white rounded-md"
+        className="w-full py-2 mt-4 bg-[#e67e22] font-medium text-white rounded-md"
       >
         {loading ? "Yuborish..." : "Yuborish"}
       </button>

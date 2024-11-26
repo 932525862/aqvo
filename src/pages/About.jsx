@@ -8,7 +8,7 @@ import sertificatImg from "../assets/sertificat.jpg";
 
 const About = () => {
   return (
-    <div className="pt-32 bg-red-800">
+    <div className="pt-20 sm:pt-32 bg-red-800">
       <div className="container">
         <div className="flex items-center mb-10">
           <Link
@@ -21,7 +21,7 @@ const About = () => {
               className="w-[30px] h-[30px]"
             />
           </Link>{" "}
-          <h2 className="w-full text-center text-4xl text-red-200 oswald ">
+          <h2 className="w-full text-center text-3xl sm:text-4xl text-red-200 oswald ">
            Aqvo - sifatli konserva mahsulotlari
           </h2>
         </div>
@@ -37,10 +37,10 @@ const About = () => {
               O‘zbekistondagi yetakchi konserva mahsulotlari ishlab chiqaruvchi kompaniyalardan biri.
             </h4>
             <p className="text-[15px] font-medium text-white">
-            Taqvo kompaniyasi yuqori sifatli **tushonka** va **jiz**
+            Aqvo kompaniyasi yuqori sifatli **tushonka** va **jiz**
               mahsulotlarini ishlab chiqarishga ixtisoslashgan. Zamonaviy
               texnologiyalar va xalqaro sifat standartlariga mos usullar orqali
-              mahsulotlarimizni tayyorlaymiz. Taqvo mahsulotlari o‘zining
+              mahsulotlarimizni tayyorlaymiz. Aqvo mahsulotlari o‘zining
               mazasi va uzoq muddat saqlanishi bilan ajralib turadi.
             </p>
           </div>
@@ -82,7 +82,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center pb-20">
+        <div className="flex flex-col items-center pb-10 sm:pb-20">
           <h3 className="oswald text-color1 text-3xl font-medium mb-5">BIZNING SERTIFIKATLARIMIZ</h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">

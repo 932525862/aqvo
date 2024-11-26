@@ -49,15 +49,15 @@ const Header = ({openModal}) => {
       {/* Mobil menyu */}
       <div
         ref={menuRef}
-        className={`fixed h-screen w-[300px] bg-[#d6303091] backdrop-blur-md z-[9999999] transition-all duration-300 p-[10px] ${
+        className={`fixed h-screen w-[300px] bg-white/80 backdrop-blur-3xl z-[9999999] transition-all duration-300 p-[10px] ${
           open ? "right-0" : "-right-full"
         }`}
       >
         <div className="flex flex-col">
           <div onClick={() => setOpen(false)} className="self-end">
-            <IoMdClose className="text-[#fff] text-[30px]" />
+            <IoMdClose className="text-red-800 text-[30px]" />
           </div>
-          <ul className="mt-5 space-y-4 text-white flex flex-col gap-[10px]">
+          <ul className="mt-5 space-y-4 text-red-800 flex flex-col gap-[10px] font-medium">
             <li>
               <Link to="/">
                 <img
@@ -79,13 +79,13 @@ const Header = ({openModal}) => {
             </li>
             <li>
               <div className="flex items-center gap-[10px] oswald">
-                <button onClick={() => changeLng("ru")} className="w-full font-medium border border-white rounded-full py-[10px] text-[15px] ">
+                <button onClick={() => changeLng("ru")} className="w-full font-medium border-[2px] border-red-800 rounded-full py-[10px] text-[15px] ">
                   RU
                 </button>
-                <button onClick={() => changeLng("uz")} className="w-full font-medium border border-white rounded-full py-[10px] text-[15px] ">
+                <button onClick={() => changeLng("uz")} className="w-full font-medium border-[2px] border-red-800 rounded-full py-[10px] text-[15px] ">
                   UZ
                 </button>
-                <button onClick={() => changeLng("en")} className="w-full font-medium border border-white rounded-full py-[10px] text-[15px] ">
+                <button onClick={() => changeLng("en")} className="w-full font-medium border-[2px] border-red-800 rounded-full py-[10px] text-[15px] ">
                   EN
                 </button>
               </div>
