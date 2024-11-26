@@ -20,7 +20,7 @@ import photo6 from "../assets/img2/6.jpg";
 import photo7 from "../assets/img2/7.jpg";
 import photo8 from "../assets/img2/8.jpg";
 import photo9 from "../assets/img2/9.jpg";
-import photo10 from "../assets/img2/10.jpg";S
+import photo10 from "../assets/img2/10.jpg";
 import photo11 from "../assets/img2/11.jpg";
 
 import Marquee from "react-fast-marquee";
