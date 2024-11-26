@@ -116,7 +116,7 @@ const Header = ({openModal}) => {
             {/* Til tanlash va tugma */}
             <div className="hidden lg:block">
               <LanguageSelect />
-              <button onClick={openModal} className="font-[500] w-[240px] h-[44px] bg-[#d1ab7d] transition-all duration-300 rounded-[30px] hover:bg-red-700">
+              <button onClick={openModal} className="font-[500] w-[240px] h-[44px] bg-[#a78861] transition-all duration-300 rounded-[30px] hover:bg-[#d1ab7d]">
                 Bog'lanish
               </button>
             </div>

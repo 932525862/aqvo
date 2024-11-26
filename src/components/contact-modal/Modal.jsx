@@ -16,13 +16,13 @@ const Modal = ({ isOpen, setIsOpen }) => {
       {isOpen && (
         <div
           id="modal-overlay"
-          className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-[111] p-2"
+          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[111] p-2"
           onClick={handleOutsideClick}
         >
-          <div className="rounded shadow-lg w-max bg-red-800 pt-10 pb-8 px-6 relative">
+          <div className="rounded shadow-md shadow-red-300 w-max bg-white pt-10 pb-8 px-6 relative">
             <button
               onClick={closeModal}
-              className="bg-dark-red text-white/90 transition text-2xl hover:scale-105 absolute top-5 right-6"
+              className="bg-dark-red text-black/90 transition text-2xl hover:scale-105 absolute top-5 right-6"
             >
               <IoCloseCircleOutline />
             </button>
