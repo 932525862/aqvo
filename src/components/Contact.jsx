@@ -8,13 +8,10 @@ const Contact = () => {
         <div className="flex justify-between lg:flex-row flex-col ">
           <div className="max-w-full lg:max-w-[500px] text-[#fff]">
             <h3 className="oswald text-[32px] uppercase font-semibold mb-[10px]">
-              Lorem ipsum dolor sit.
+			"AQVO" bilan yangicha ta’mni his eting.
             </h3>
             <p className="text-[15px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              totam, quasi aut nisi temporibus animi consectetur assumenda ipsam
-              doloribus perspiciatis! Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Provident, rerum!
+			Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!
             </p>
           </div>
           <Form/>

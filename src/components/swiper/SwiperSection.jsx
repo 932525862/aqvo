@@ -23,34 +23,30 @@ const SwiperSection = () => {
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem, ipsum dolor. Lorem,{" "}
+			Aqvo brendi haqida{" "}
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-              necessitatibus! Lorem ipsum dolor sit amet.
+			Aqvo – sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jizz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelm
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem, ipsum.
+			Mahsulot turlari
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-              necessitatibus! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+			Aqvo brendi hozirda mol go‘shtli, tovuq go‘shtli va qo‘y go‘shtli mahsulotlar bilan iste’molchilarga xizmat ko‘rsatmoqda. Har bir mahsulotimiz o‘ziga xos yuqori sifat, yangicha ta’m va halollik tamoyillariga asoslangan holda ishlab chiqariladi. Aqvo – bu mazali va ishonchli mahsulotlarning yorqin timsoli.
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="h-[600px] w-full flex justify-center items-center flex-col gap-6 ">
             <h3 className="oswald text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold">
-              Lorem ipsum dolor sit.
+			Yetkazib berish ko‘lami
             </h3>
             <p className="text-[15px] ss:text-[16px] md:text-[17px] lg:text-[18px] max-w-[620px] lg:max-w-[760px] text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur voluptates sit voluptas mollitia reprehenderit
-              suscipit ipsum consectetur placeat veniam dicta?
+			Aqvo brendi o‘z mahsulotlarini keng hududlarga yetkazib berishni tashkil etib, sifat va tezkorlikni birinchi o‘ringa qo‘yadi. Bizning yetkazib berish tarmog‘imiz orqali mahsulotlar O‘zbekistonning barcha hududlariga o‘z vaqtida yetib boradi. Aqvo – har doim sizga yaqin, har doim ishonchli.
             </p>
           </div>
         </SwiperSlide>
