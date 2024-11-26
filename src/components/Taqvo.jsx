@@ -116,7 +116,7 @@ const Taqvo = () => {
             </div>
           </Marquee>
         </div>
-        <Marquee direction="right" pauseOnClick={true}>
+        <Marquee direction="right" >
           <div className="mr-[20px]">
             <img
               className="w-[140px] h-[140px] ss:w-[160px] ss:h-[160px] sm:h-[180px] sm:w-[180px] lg:w-[200px] lg:h-[200px] object-cover rounded-[20px]"

@@ -3,10 +3,10 @@ import Form from "./Form";
 const Contact = () => {
   
   return (
-    <section className="bg-[#e03636] pt-[50px] sm:pt-[100px] pb-[50px]">
+    <section className="bg-[#fff] pt-[50px] sm:pt-[100px] pb-[50px]">
       <div className="container f ">
         <div className="flex justify-between lg:flex-row flex-col ">
-          <div className="max-w-full lg:max-w-[500px] text-[#fff]">
+          <div className="max-w-full lg:max-w-[500px] text-black">
             <h3 className="oswald text-[32px] uppercase font-semibold mb-[10px]">
             Biz bilan bog‘laning
             </h3>
