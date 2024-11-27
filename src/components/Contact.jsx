@@ -1,9 +1,15 @@
 import Form from "./Form";
-
+import backgroundImage from "../assets/img2/hhhmmm4.jpg";
 const Contact = () => {
   
   return (
     <section className="bg-[#e03636] pt-[50px] sm:pt-[100px] pb-[50px]">
+		<div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+        }}
+      ></div>
       <div className="container f ">
         <div className="flex justify-between lg:flex-row flex-col ">
           <div className="max-w-full lg:max-w-[500px] text-[#fff]">

@@ -199,10 +199,10 @@ const Taqvo = () => {
       <div className="container">
         <div className="lg:hidden flex items-center gap-[10px] w-full mt-[30px] text-[#fff] text-[14px] ss:text-[15px]">
           <button className="w-full font-medium border border-white rounded-full py-[15px] ">
-            Bizning Instagram
+            Instagram
           </button>
           <button className="w-full font-medium border border-white rounded-full py-[15px] ">
-            Bizning Telegram
+            Telegram
           </button>
         </div>
       </div>

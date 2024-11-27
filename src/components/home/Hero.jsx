@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/hero.png";
+// import backgroundImage from "../../assets/img2/homebacimg.j";
 import Marquee from "react-fast-marquee";
 import buka from "../../../public/logo.png"
 const Hero = ({openModal}) => {
