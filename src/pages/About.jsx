@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import leftArrowIcon from "../assets/left-arrow.svg";
 import aboutImg1 from "../assets/about1.jpg";
 import aboutImg2 from "../assets/about2.jpg";
@@ -8,7 +8,7 @@ import sertificatImg from "../assets/sertificat.jpg";
 
 const About = () => {
   return (
-    <div className="pt-32 bg-red-800">
+    <div className="pt-20 sm:pt-32 bg-red-800">
       <div className="container">
         <div className="flex items-center mb-10">
           <Link
@@ -21,8 +21,8 @@ const About = () => {
               className="w-[30px] h-[30px]"
             />
           </Link>{" "}
-          <h2 className="w-full text-center text-4xl text-red-200 oswald ">
-            Taqvo - bizning tanlov
+          <h2 className="w-full text-center text-3xl sm:text-4xl text-red-200 oswald ">
+            Aqvo - sifatli konserva mahsulotlari
           </h2>
         </div>
 
@@ -43,7 +43,7 @@ const About = () => {
               dizaynda taqdim etuvchi yetakchi brend.
             </h4>
             <p className="text-[15px] font-medium text-white">
-              AQVO O‘zbekistondagi yetakchi jizz va kanserma mahsulotlari ishlab
+              AQVO O‘zbekistondagi yetakchi jizz va kanserva mahsulotlari ishlab
               chiqaruvchi kompaniyalardan biridir. Biz mijozlarimizga sifat va
               halollikni o‘zida mujassam etgan, xalqaro talab va standartlarga
               javob beradigan jizz mahsulotlarini taqdim etishga intilamiz.
@@ -68,11 +68,16 @@ const About = () => {
 
           <div className="flex flex-col gap-y-5 justify-between lg:w-[50%]">
             <h4 className="text-[24px] text-white font-medium">
-              <span className="text-color1 block">AQVO</span>{" "}
-              AQVO Jizz Mahsulotlari: Yangi Dizayn, Yangicha Ta’m
+              <span className="text-color1 block">AQVO</span> AQVO Jizz
+              Mahsulotlari: Yangi Dizayn, Yangicha Ta’m
             </h4>
             <p className="text-[15px] font-medium text-white">
-			AQVO brendi jizz mahsulotlarini yangi, zamonaviy qadoq dizayni va o‘ziga xos ta’mi bilan taqdim etadi. Bizning mahsulotlarimiz nafaqat yuqori sifatli, balki jozibali va ekologik jihatdan toza qadoqlarda taqdim etiladi. Har bir paket AQVO mahsuloti o‘zining betakror ta’mi va o‘zgacha dizayni bilan mijozlarga nafaqat sifatli, balki vizual zavq ham taqdim etadi.
+              AQVO brendi jizz mahsulotlarini yangi, zamonaviy qadoq dizayni va
+              o‘ziga xos ta’mi bilan taqdim etadi. Bizning mahsulotlarimiz
+              nafaqat yuqori sifatli, balki jozibali va ekologik jihatdan toza
+              qadoqlarda taqdim etiladi. Har bir paket AQVO mahsuloti o‘zining
+              betakror ta’mi va o‘zgacha dizayni bilan mijozlarga nafaqat
+              sifatli, balki vizual zavq ham taqdim etadi.
             </p>
           </div>
         </div>
@@ -88,9 +93,18 @@ const About = () => {
 
           <div className="flex flex-col gap-y-5 justify-between">
             <p className="text-[15px] font-medium text-white">
-			AQVO brendi, jizz mahsulotlarini yangicha ta’m va zamonaviy qadoq dizayni bilan taqdim etadi. Mahsulotlarimiz yuqori sifatli, halol va xavfsiz bo‘lib, har bir qadoq o‘zining innovatsion dizayni bilan ajralib turadi. Bizning jizz mahsulotlarimiz xalqaro sifat standartlariga javob berib, zamonaviy texnologiyalar yordamida ishlab chiqariladi.
-
-Har bir mahsulot bir nechta qat'iy tekshiruvlardan o‘tkazilib, ta'mi va sifatiga kafolat beradi. AQVO mahsulotlari nafaqat mazali, balki dizayni va ekotexnologiyasi bilan ham mijozlarimizni qadrlashadi. Biz sifat va dizaynning mukammal uyg‘unligini ta’minlab, har bir iste’molchiga yuqori sifatli mahsulotlarni taqdim etishga intilamiz. AQVO – bu yangicha ta’m va zamonaviy dizaynni
+              AQVO brendi, jizz mahsulotlarini yangicha ta’m va zamonaviy qadoq
+              dizayni bilan taqdim etadi. Mahsulotlarimiz yuqori sifatli, halol
+              va xavfsiz bo‘lib, har bir qadoq o‘zining innovatsion dizayni
+              bilan ajralib turadi. Bizning jizz mahsulotlarimiz xalqaro sifat
+              standartlariga javob berib, zamonaviy texnologiyalar yordamida
+              ishlab chiqariladi. Har bir mahsulot bir nechta qat'iy
+              tekshiruvlardan o‘tkazilib, ta'mi va sifatiga kafolat beradi. AQVO
+              mahsulotlari nafaqat mazali, balki dizayni va ekotexnologiyasi
+              bilan ham mijozlarimizni qadrlashadi. Biz sifat va dizaynning
+              mukammal uyg‘unligini ta’minlab, har bir iste’molchiga yuqori
+              sifatli mahsulotlarni taqdim etishga intilamiz. AQVO – bu yangicha
+              ta’m va zamonaviy dizaynni
             </p>
           </div>
         </div>

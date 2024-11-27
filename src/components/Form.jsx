@@ -85,7 +85,7 @@ const Form = () => {
             rules={{ required: "Ismni kiriting" }}
           />
           {errors.firstName && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.firstName?.message}
             </p>
           )}
@@ -99,7 +99,7 @@ const Form = () => {
             rules={{ required: "Familiya kiriting" }}
           />
           {errors?.lastName && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.lastName?.message}
             </p>
           )}
@@ -116,7 +116,7 @@ const Form = () => {
             rules={{ required: "Telefon raqam kiriting" }}
           />
           {errors?.phoneNumber && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.phoneNumber?.message}
             </p>
           )}
@@ -130,7 +130,7 @@ const Form = () => {
             rules={{ required: "Telegram useename kiriting" }}
           />
           {errors?.telegramUsername && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.telegramUsername?.message}
             </p>
           )}
@@ -145,7 +145,7 @@ const Form = () => {
             rules={{ required: "Hududingizni kiriting" }}
           ></InputField>
           {errors?.region && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.region?.message}
             </p>
           )}
@@ -159,7 +159,7 @@ const Form = () => {
             rules={{ required: "Xizmat turini tanlang" }}
           />
           {errors?.service && (
-            <p className="text-black text-[13px] mt-[2px]">
+            <p className="text-red-600 text-[13px] mt-[2px]">
               {errors?.service?.message}
             </p>
           )}
@@ -176,7 +176,7 @@ const Form = () => {
       <button
         type="submit"
         disabled={loading}
-        className="w-full py-2 mt-4 bg-[#d1ab7d] font-medium text-white rounded-md"
+        className="w-full py-2 mt-4 bg-[#e67e22] font-medium text-white rounded-md"
       >
         {loading ? "Yuborish..." : "Yuborish"}
       </button>

@@ -22,7 +22,7 @@ const FormSelect = ({ name, label, control, options, rules, placeholder}) => {
 
   return (
     <div ref={selectRef} className="relative w-full">
-      <label htmlFor={name} className="text-white">
+      <label htmlFor={name} className="text-black">
         {label}
       </label>
       <Controller
@@ -32,7 +32,7 @@ const FormSelect = ({ name, label, control, options, rules, placeholder}) => {
         render={({ field }) => (
           <>
             <div
-              className="w-full text-[14px] ss:text-[16px] mt-2 p-2 pl-0 ss:pl-2 bg-transparent text-[#fff] border-b cursor-pointer flex items-center justify-between"
+              className="w-full text-[14px] ss:text-[16px] mt-2 p-2 pl-0 ss:pl-2 bg-transparent text-black border-b border-black cursor-pointer flex items-center justify-between"
               onClick={() => setIsOpen(!isOpen)}
             >
               {selectedOption || placeholder}
@@ -41,7 +41,7 @@ const FormSelect = ({ name, label, control, options, rules, placeholder}) => {
               />
             </div>
             {isOpen && (
-              <ul className="absolute w-full mt-2 bg-white rounded-md shadow-lg z-10">
+              <ul className="absolute w-full mt-2 bg-white border border-black rounded-md shadow-lg z-10">
                 {options.map((option) => (
                   <li
                     key={option.value}

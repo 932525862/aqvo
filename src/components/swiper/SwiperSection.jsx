@@ -12,7 +12,6 @@ const SwiperSection = () => {
   return (
     <section>
       <Swiper
-        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -26,7 +25,7 @@ const SwiperSection = () => {
         <SwiperSlide>
           <div
             className="h-[600px] w-full flex justify-center items-center flex-col gap-6 bg-cover bg-center relative"
-            style={{ backgroundImage: `url(${Aqvo1})` }} // Background image for Aqvo1
+            style={{ backgroundImage: `url(${Aqvo1})`}} // Background image for Aqvo1
           >
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Overlay for better text visibility */}
             <h3 className="oswald text-white text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold z-10">
@@ -40,7 +39,7 @@ const SwiperSection = () => {
         <SwiperSlide>
           <div
             className="h-[600px] w-full flex justify-center items-center flex-col gap-6 bg-cover bg-center relative"
-            style={{ backgroundImage: `url(${Aqvo2})` }} // Background image for Aqvo2
+            style={{ backgroundImage: `url(${Aqvo2})`}} // Background image for Aqvo2
           >
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Overlay for better text visibility */}
             <h3 className="oswald text-white text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold z-10">
@@ -54,7 +53,7 @@ const SwiperSection = () => {
         <SwiperSlide>
           <div
             className="h-[600px] w-full flex justify-center items-center flex-col gap-6 bg-cover bg-center relative"
-            style={{ backgroundImage: `url(${Aqvo3})` }} // Background image for Aqvo3
+            style={{ backgroundImage: `url(${Aqvo3})`}} // Background image for Aqvo3
           >
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Overlay for better text visibility */}
             <h3 className="oswald text-white text-[35px] ss:text-[50px] md:text-[76px] lg:text-[86px] max-w-[620px] lg:max-w-[760px] text-center uppercase leading-[110%] font-semibold z-10">
