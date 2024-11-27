@@ -1,17 +1,9 @@
 import React from "react";
-// import backgroundImage from "../../assets/img2/homebacimg.j";
 import Marquee from "react-fast-marquee";
 import buka from "../../../public/logo.png"
 const Hero = ({openModal}) => {
   return (
-    <section className="relative h-screen">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-red-800"
-        // style={{
-        //   backgroundImage: `url(${backgroundImage})`,
-        //   opacity: 0.7,
-        // }}
-      ></div>
+    <section className="relative h-screen bg-red-800">
       <div className="absolute top-[60%] lg:top-[30%] z-20 w-full overflow-hidden">
         <Marquee direction="left" gradient={false} >
           <div className="oswald text-[12vw] uppercase text-[#fff] font-medium mr-4">
