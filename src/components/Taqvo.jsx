@@ -40,12 +40,16 @@ const Taqvo = () => {
               <img className="w-[150px] sm:w-[200px] h-auto" src={taqvoImg} alt="taqvo photo" />
             </div>
           </div>
+         
           <div className="hidden lg:flex items-center flex-col gap-[10px] w-[260px]">
+            <a
+              href="https://www.instagram.com/aqvo_jiz/"
+              className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300 flex justify-center items-center"
+            >
+              {t("taqvo.ins-1")}
+            </a>
             <button className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300">
-            {t("taqvo.ins-1")}
-            </button>
-            <button className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300">
-            {t("taqvo.tg-1")}
+              {t("taqvo.tg-1")}
             </button>
           </div>
         </div>
@@ -200,9 +204,15 @@ const Taqvo = () => {
       </div>
       <div className="container">
         <div className="lg:hidden flex items-center gap-[10px] w-full mt-[30px] text-[#fff] text-[14px] ss:text-[15px]">
-          <button className="w-full font-medium border border-white rounded-full py-[15px] ">
+          {/* <button className="w-full font-medium border border-white rounded-full py-[15px] ">
           {t("taqvo.ins-2")}
-          </button>
+          </button> */}
+		  <a
+              href="https://www.instagram.com/aqvo_jiz/"
+              className="w-full font-medium border border-white rounded-full py-[15px]  lg:hidden flex items-center gap-[10px] w-full mt-[30px] text-[#fff] text-[14px] ss:text-[15px]"
+            >
+              {t("taqvo.ins-1")}
+            </a>
           <button className="w-full font-medium border border-white rounded-full py-[15px] ">
           {t("taqvo.tg-2")}
           </button>

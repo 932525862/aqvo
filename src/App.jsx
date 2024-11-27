@@ -16,7 +16,7 @@ function App() {
 
   // useEffect orqali loadingni 3 soniyadan keyin o'chiramiz
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3000); // 3 soniya
+    const timer = setTimeout(() => setIsLoading(false), 2000); // 3 soniya
     return () => clearTimeout(timer); // Timerni tozalash
   }, []);
 
