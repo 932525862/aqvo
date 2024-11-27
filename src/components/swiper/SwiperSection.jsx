@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import Aqvo1 from "../../assets/img2/2.jpg"; // import Aqvo1
+import Aqvo1 from "../../assets/img2/3.jpg"; // import Aqvo1
 import Aqvo2 from "../../assets/img2/7.jpg"; // import Aqvo2
 import Aqvo3 from "../../assets/img2/11.jpg"; // import Aqvo3
 import { Pagination, Autoplay } from "swiper/modules";

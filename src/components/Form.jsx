@@ -127,7 +127,7 @@ const Form = () => {
             placeholder="Telegram username"
             type="text"
             control={control}
-            rules={{ required: "Telegram useename kiriting" }}
+            rules={{ required: "Telegram username kiriting" }}
           />
           {errors?.telegramUsername && (
             <p className="text-red-600 text-[13px] mt-[2px]">
