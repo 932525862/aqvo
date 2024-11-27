@@ -6,8 +6,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 
-const TOKEN = "7160474181:AAH3gUma-7m7XvwY0AYTbcKFaXjWLJ2MmUg";
-const CHAT_ID = 467533539;
+const TOKEN = "7794367883:AAFEfJA4FYj7TnCu4lA2ev6gJAy7Er-2hgc";
+const CHAT_ID = -1002386887505;
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 const Form = () => {
