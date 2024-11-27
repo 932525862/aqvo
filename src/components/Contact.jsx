@@ -1,6 +1,8 @@
 import Form from "./Form";
 import backgroundImage from "../assets/img2/hhhmmm4.jpg";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
+  const {t} = useTranslation()
   return (
     <section className="relative pt-[50px] sm:pt-[100px] pb-[50px]">
 		<div
@@ -13,15 +15,10 @@ const Contact = () => {
         <div className="flex justify-between lg:flex-row flex-col ">
           <div className="max-w-full lg:max-w-[500px] text-black">
             <h3 className="oswald text-[32px] text-[#fff] uppercase font-semibold mb-[10px]">
-              "AQVO" bilan yangicha ta’mni his eting.
+            {t("contact.title")}
             </h3>
             <p className="text-[15px] text-[#fff]">
-              Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi.
-              Bizning mahsulotlarimiz har bir iste’molchiga sifatli va
-              innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim
-              etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar
-              bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz
-              bilan birga kashf eting va haqiqiy sifatni his eting!
+            {t("contact.text")}
             </p>
           </div>
           <Form />

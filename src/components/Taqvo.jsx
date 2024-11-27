@@ -24,15 +24,17 @@ import photo10 from "../assets/img2/10.jpg";
 import photo11 from "../assets/img2/11.jpg";
 
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 
 const Taqvo = () => {
+  const {t} = useTranslation()
   return (
     <section className="bg-red-800 py-[50px] ss:py-[70px]">
       <div className="container">
         <div className="flex justify-between text-white items-center">
           <div className="relative ">
             <h1 className="text-[25px] sm:text-[32px] max-w-[415px]">
-              SIZNING AQVO BILAN LAHZALARINGIZ
+            {t("taqvo.title")}
             </h1>
             <div className="absolute -bottom-[50px] sm:-bottom-[30px] right-0 sm:-right-[100px]">
               <img className="w-[150px] sm:w-[200px] h-auto" src={taqvoImg} alt="taqvo photo" />
@@ -40,10 +42,10 @@ const Taqvo = () => {
           </div>
           <div className="hidden lg:flex items-center flex-col gap-[10px] w-[260px]">
             <button className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300">
-              Bizning Instagram
+            {t("taqvo.ins-1")}
             </button>
             <button className="w-full font-medium border border-white rounded-full py-[15px] text-[15px] hover:bg-white hover:text-navy-900 hover:text-red-800 transition-colors duration-300">
-              Bizning Telegram
+            {t("taqvo.tg-1")}
             </button>
           </div>
         </div>
@@ -199,10 +201,10 @@ const Taqvo = () => {
       <div className="container">
         <div className="lg:hidden flex items-center gap-[10px] w-full mt-[30px] text-[#fff] text-[14px] ss:text-[15px]">
           <button className="w-full font-medium border border-white rounded-full py-[15px] ">
-            Instagram
+          {t("taqvo.ins-2")}
           </button>
           <button className="w-full font-medium border border-white rounded-full py-[15px] ">
-            Telegram
+          {t("taqvo.tg-2")}
           </button>
         </div>
       </div>

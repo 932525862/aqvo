@@ -4,6 +4,7 @@ import FormSelect from "./FormSelect";
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 const TOKEN = "7160474181:AAH3gUma-7m7XvwY0AYTbcKFaXjWLJ2MmUg";
 const CHAT_ID = 467533539;
@@ -11,21 +12,24 @@ const TELEGRAM_API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 const Form = () => {
   const [loading, setLoading] = useState(false);
+  const { t, i18n } = useTranslation()
   const {
     control,
     handleSubmit,
     formState: { errors },
-    reset
-  } = useForm({defaultValues: {
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    telegramUsername: "",
-    region: "",
-    service: "",
-    message: "",
-  },});
-
+    reset,
+  } = useForm({
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      telegramUsername: "",
+      region: "",
+      service: "",
+      message: "",
+    },
+  });
+  
   const onSubmit = async (data) => {
     setLoading(true);
 
@@ -44,7 +48,6 @@ const Form = () => {
       toast.error("Error!");
       setLoading(false);
     }
-
   };
 
   const resetMessage = (data) => {
@@ -57,21 +60,33 @@ const Form = () => {
 
     let address = data?.region ? `\n🏠 Manzil: ${data?.region}` : "";
 
-    let telegram = data?.telegramUsername ? `\n💬 Telegram: ${data?.telegramUsername}` : "";
+    let telegram = data?.telegramUsername
+      ? `\n💬 Telegram: ${data?.telegramUsername}`
+      : "";
 
     let service = data?.service ? `\n🛠 Xizmat turi: ${data?.service}` : "";
 
     let xabar = data?.message ? `\n📝 Izoh: ${data?.message}` : "";
 
-    let message = fullName + phone + address + telegram  + service + xabar;
+    let message = fullName + phone + address + telegram + service + xabar;
 
     return message;
   };
 
-  const regionOptions = [
-    { label: "Mahsulot", value: "Mahsulot" },
-    { label: "Franshiza", value: "Franshiza" },
-  ];
+  const regionOptions = {
+    uz: [
+      { label: "Mahsulot", value: "Mahsulot" },
+      { label: "Franshiza", value: "Franshiza" },
+    ],
+    ru: [
+      { label: "Продукт", value: "Продукт" },
+      { label: "Франшиза", value: "Франшиза" },
+    ],
+    en: [
+      { label: "Product", value: "Product" },
+      { label: "Franchise", value: "Franchise" },
+    ],
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -79,10 +94,10 @@ const Form = () => {
         <div className="w-full">
           <InputField
             name="firstName"
-            placeholder="Ismingiz"
+            placeholder={t("form.name")}
             type="text"
             control={control}
-            rules={{ required: "Ismni kiriting" }}
+            rules={{ required: t("form.name-error") }}
           />
           {errors.firstName && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -93,10 +108,10 @@ const Form = () => {
         <div className="w-full">
           <InputField
             name="lastName"
-            placeholder="Familiyangiz"
+            placeholder={t("form.lastName")}
             type="text"
             control={control}
-            rules={{ required: "Familiya kiriting" }}
+            rules={{ required: t("form.lastName-error") }}
           />
           {errors?.lastName && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -110,10 +125,10 @@ const Form = () => {
         <div className="w-full">
           <InputField
             name="phoneNumber"
-            placeholder="Telefon raqamingiz"
+            placeholder={t("form.phone")}
             type="tel"
             control={control}
-            rules={{ required: "Telefon raqam kiriting" }}
+            rules={{ required: t("form.phone-error") }}
           />
           {errors?.phoneNumber && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -124,10 +139,10 @@ const Form = () => {
         <div className="w-full">
           <InputField
             name="telegramUsername"
-            placeholder="Telegram username"
+            placeholder={t("form.tg")}
             type="text"
             control={control}
-            rules={{ required: "Telegram username kiriting" }}
+            rules={{ required: t("form.tg-error") }}
           />
           {errors?.telegramUsername && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -140,9 +155,9 @@ const Form = () => {
         <div className="w-full">
           <InputField
             name="region"
-            placeholder="Hudud"
+            placeholder={t("form.area")}
             control={control}
-            rules={{ required: "Hududingizni kiriting" }}
+            rules={{ required: t("form.area-error") }}
           ></InputField>
           {errors?.region && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -153,10 +168,10 @@ const Form = () => {
         <div className="w-full">
           <FormSelect
             name="service"
-            placeholder="Xizmat turini tanlang"
+            placeholder={t("form.service")}
             control={control}
-            options={regionOptions}
-            rules={{ required: "Xizmat turini tanlang" }}
+            options={i18n.language == 'uz' ? regionOptions?.uz : i18n.language == 'ru' ? regionOptions?.ru : regionOptions?.en}
+            rules={{ required: t("form.service") }}
           />
           {errors?.service && (
             <p className="text-red-600 text-[13px] mt-[2px]">
@@ -168,7 +183,7 @@ const Form = () => {
 
       <InputField
         name="message"
-        placeholder="Xabar"
+        placeholder={t("form.message")}
         type="text"
         control={control}
         isTextArea
@@ -178,7 +193,7 @@ const Form = () => {
         disabled={loading}
         className="w-full py-2 mt-4 bg-[#e67e22] font-medium text-white rounded-md"
       >
-        {loading ? "Yuborish..." : "Yuborish"}
+        {loading ? `${t("form.btn")}...` : t("form.btn")}
       </button>
     </form>
   );

@@ -5,9 +5,11 @@ import LanguageSelect from "./LanguageSelect";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import i18n from "../i18next";
+import { useTranslation } from "react-i18next";
 
 const Header = ({openModal}) => {
   const [open, setOpen] = useState(false);
+  const {t} = useTranslation()
   const menuRef = useRef(null);
 
   // Tashqarida bosilganda menyuni yopish
@@ -69,12 +71,12 @@ const Header = ({openModal}) => {
             </li>
             <li>
               <Link to="/" onClick={() => setOpen(false)}>
-                Bosh sahifa
+                {t("header.home")}
               </Link>
             </li>
             <li>
               <Link to="/about" onClick={() => setOpen(false)}>
-                Biz haqimizda
+              {t("header.about")}
               </Link>
             </li>
             <li>
@@ -102,10 +104,10 @@ const Header = ({openModal}) => {
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
                 <li>
-                  <Link to="/">Bosh sahifa</Link>
+                  <Link to="/">{t("header.home")}</Link>
                 </li>
                 <li>
-                  <Link to="/about">Biz haqimizda</Link>
+                  <Link to="/about">{t("header.about")}</Link>
                 </li>
               </ul>
             </div>
@@ -117,7 +119,7 @@ const Header = ({openModal}) => {
             <div className="hidden lg:block">
               <LanguageSelect />
               <button onClick={openModal} className="font-[500] w-[240px] h-[44px] bg-[#a78861] transition-all duration-300 rounded-[30px] hover:bg-[#d1ab7d]">
-                Bog'lanish
+              {t("header.btn")}
               </button>
             </div>
             {/* Mobil menyu tugmasi */}

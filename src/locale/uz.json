@@ -1,1 +1,62 @@
-{}
+{
+    "header": {
+        "home": "Bosh sahifa",
+        "about": "Biz haqimizda",
+        "btn": "Bog'lanish"
+    },
+    "hero": {
+        "title": "Tabiiy mahsulotlar! Sifat va ishonch!",
+        "text": "AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jizz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.",
+        "btn": "Buyurtma"
+    },
+    "swiper": {
+        "title-1": "Aqvo brendi haqida",
+        "text-1": "Aqvo – sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jizz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda.",
+        "title-2": "Mahsulot turlari",
+        "text-2": "Aqvo brendi hozirda mol go‘shtli, tovuq go‘shtli va qo‘y go‘shtli mahsulotlar bilan iste’molchilarga xizmat ko‘rsatmoqda. Har bir mahsulotimiz o‘ziga xos yuqori sifat, yangicha ta’m va halollik tamoyillariga asoslangan holda ishlab chiqariladi. Aqvo – bu mazali va ishonchli mahsulotlarning yorqin timsoli.",
+        "title-3": "Yetkazib berish ko‘lami",
+        "text-3": "Aqvo brendi o‘z mahsulotlarini keng hududlarga yetkazib berishni tashkil etib, sifat va tezkorlikni birinchi o‘ringa qo‘yadi. Bizning yetkazib berish tarmog‘imiz orqali mahsulotlar O‘zbekistonning barcha hududlariga o‘z vaqtida yetib boradi. Aqvo – har doim sizga yaqin, har doim ishonchli."
+    },
+    "taqvo": {
+        "title": "SIZNING AQVO BILAN LAHZALARINGIZ",
+        "ins-1": "Bizning Instagram",
+        "tg-1": "Bizning Telegram",
+        "ins-2": "Instagram",
+        "tg-2": "Telegram"
+    },
+    "contact": {
+        "title": "\"AQVO\" bilan yangicha ta’mni his eting.",
+        "text": "Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!"
+    },
+    "form": {
+        "name": "Ismingiz",
+        "name-error": "Ismni kiriting",
+        "lastName": "Familiyangiz",
+        "lastName-error": "Familiya kiriting",
+        "phone": "Telefon raqamingiz",
+        "phone-error": "Telefon raqam kiriting",
+        "tg": "Telegram username",
+        "tg-error": "Telegram username kiriting",
+        "area": "Hudud",
+        "area-error": "Hududingizni kiriting",
+        "service": "Xizmat turini tanlang",
+        "message": "Xabar",
+        "btn": "Yuborish"
+    },
+    "about": {
+        "title-h": "Aqvo - sifatli konserva mahsulotlari",
+        "title-h1-1": "AQVO Jizz Mahsulotlari",
+        "title-h2-1": "AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jizz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.",
+        "text-1": "AQVO O‘zbekistondagi yetakchi jizz va kanserva mahsulotlari ishlab chiqaruvchi kompaniyalardan biridir. Biz mijozlarimizga sifat va halollikni o‘zida mujassam etgan, xalqaro talab va standartlarga javob beradigan jizz mahsulotlarini taqdim etishga intilamiz. Zamonaviy uskunalar va ilg‘or texnologiyalarni qo‘llagan holda, mahsulotlarimiz ishlab chiqarish jarayoni qat'iy sifat nazorati ostida amalga oshiriladi. Har bir AQVO jizz mahsuloti, uning xavfsizligi va iste’molga yaroqliligini ta'minlash uchun bir nechta sinov va tekshiruv bosqichlaridan o‘tkaziladi. AQVO – bu sifat, halollik va xavfsizlikning ramzi.",
+        "title-h1-2": "AQVO",
+        "title-h2-2": "AQVO Jizz Mahsulotlari: Yangi Dizayn, Yangicha Ta’m",
+        "text-2": "AQVO brendi jizz mahsulotlarini yangi, zamonaviy qadoq dizayni va o‘ziga xos ta’mi bilan taqdim etadi. Bizning mahsulotlarimiz nafaqat yuqori sifatli, balki jozibali va ekologik jihatdan toza qadoqlarda taqdim etiladi. Har bir paket AQVO mahsuloti o‘zining betakror ta’mi va o‘zgacha dizayni bilan mijozlarga nafaqat sifatli, balki vizual zavq ham taqdim etadi.",
+        "text-3": "AQVO brendi, jizz mahsulotlarini yangicha ta’m va zamonaviy qadoq dizayni bilan taqdim etadi. Mahsulotlarimiz yuqori sifatli, halol va xavfsiz bo‘lib, har bir qadoq o‘zining innovatsion dizayni bilan ajralib turadi. Bizning jizz mahsulotlarimiz xalqaro sifat standartlariga javob berib, zamonaviy texnologiyalar yordamida ishlab chiqariladi. Har bir mahsulot bir nechta qat'iy tekshiruvlardan o‘tkazilib, ta'mi va sifatiga kafolat beradi. AQVO mahsulotlari nafaqat mazali, balki dizayni va ekotexnologiyasi bilan ham mijozlarimizni qadrlashadi. Biz sifat va dizaynning mukammal uyg‘unligini ta’minlab, har bir iste’molchiga yuqori sifatli mahsulotlarni taqdim etishga intilamiz. AQVO – bu yangicha ta’m va zamonaviy dizaynni",
+        "sertificate": "BIZNING SERTIFIKATLARIMIZ"
+    },
+    "footer": {
+        "title": "Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”'ga aylanadi!",
+        "secret": "Barcha huquqlar himoyalangan",
+        "by": "Created by Limsa"
+    }
+}
