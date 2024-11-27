@@ -32,7 +32,7 @@ const Taqvo = () => {
         <div className="flex justify-between text-white items-center">
           <div className="relative ">
             <h1 className="text-[25px] sm:text-[32px] max-w-[415px]">
-            Aqvo bilan toza va sog'lom hayotga qadam qo'ying
+              SIZNING AQVO BILAN LAHZALARINGIZ
             </h1>
             <div className="absolute -bottom-[50px] sm:-bottom-[30px] right-0 sm:-right-[100px]">
               <img className="w-[150px] sm:w-[200px] h-auto" src={taqvoImg} alt="taqvo photo" />
