@@ -25,6 +25,7 @@
         "tg-2": "Telegram"
     },
     "contact": {
+		"tel": "Bog‘lanish uchun telefon raqamlarimiz:",
         "title": "\"AQVO\" bilan yangicha ta’mni his eting.",
         "text": "Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!"
     },
@@ -57,6 +58,6 @@
     "footer": {
         "title": "Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”'ga aylanadi!",
         "secret": "Barcha huquqlar himoyalangan",
-        "by": "Created by Limsa"
+        "by": ""
     }
 }

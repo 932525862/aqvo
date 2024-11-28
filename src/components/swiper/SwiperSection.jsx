@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import aboutImg3 from "../../assets/about.jpg";
 import Aqvo1 from "../../assets/img2/3.jpg"; // import Aqvo1
 import Aqvo2 from "../../assets/img2/7.jpg"; // import Aqvo2
 import Aqvo3 from "../../assets/img2/11.jpg"; // import Aqvo3
@@ -13,6 +14,13 @@ const SwiperSection = () => {
   const {t} = useTranslation()
   return (
     <section>
+			<div className="w-full rounded-xl overflow-hidden">
+            <img
+              src={aboutImg3}
+              alt="taqvo image"
+              className="h-full w-full object-cover"
+            />
+          </div>
       <Swiper
         pagination={{
           clickable: true,
